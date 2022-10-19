@@ -114,6 +114,44 @@ setup(
     },
 )
 
+setup(
+    name='djangorestframework',
+    version=version,
+    url='https://www.django-rest-framework.org/',
+    license='BSD',
+    description='Web APIs for Django, made easy.',
+    long_description=read('README.md'),
+    long_description_content_type='text/markdown',
+    author='Tom Christie',
+    author_email='tom@tomchristie.com',  # SEE NOTE BELOW (*)
+    packages=find_packages(exclude=['tests*']),
+    include_package_data=True,
+    install_requires=["django>=3.0", "pytz"],
+    python_requires=">=3.6",
+    zip_safe=False,
+    classifiers=[
+        'Development Status :: 5 - Production/Stable',
+        'Environment :: Web Environment',
+        'Framework :: Django',
+        'Framework :: Django :: 3.0',
+        'Framework :: Django :: 3.1',
+        'Framework :: Django :: 3.2',
+        'Framework :: Django :: 4.0',
+        'Framework :: Django :: 4.1',
+        'Intended Audience :: Developers',
+        'License :: OSI Approved :: BSD License',
+        'Operating System :: OS Independent',
+        'Programming Language :: Python',
+        'Programming Language :: Python :: 3',
+        'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9',
+        'Programming Language :: Python :: 3.10',
+        'Programming Language :: Python :: 3 :: Only',
+        'Topic :: Internet :: WWW/HTTP',
+    ],
+
 # (*) Please direct queries to the discussion group, rather than to me directly
 #     Doing so helps ensure your question is helpful to other users.
 #     Queries directly to my email are likely to receive a canned response.
